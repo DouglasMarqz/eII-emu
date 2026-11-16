@@ -1,0 +1,1 @@
+PASS exact037 symbol range boundaries and relocated ASLR bases; no native ETW runtime claim

@@ -1,0 +1,40 @@
+BOOT_OK tick=182000000 LCD=[P01 GrandPiano 1][                ]
+CAPTURE frames=360000 native=360000 overflow=0 order=0 invalid=0 midi=42/0
+ROUTE legacy48 frames=360000 rmsOff=0.055456 rmsOn=0.0554285 peakOff=0.588204 peakOn=0.574307 clipOn=0 diffRel_dB=5.69881 invertedDiffRel_dB=-5.47166 changed=346830 fnvOff=59a92837429be796 fnvOn=acc389158e8d5bdf
+DEGLITCH_Y reference-route max |Y|=49.7391 V, samples beyond the 13.5 V TL084 swing=11811/2880000
+  ssm96 pass=0 solverFallbacks=0 held=0
+  ssm96 pass=1 solverFallbacks=0 held=0
+ROUTE ssm96 frames=360000 rmsOff=0.0364828 rmsOn=0.0365134 peakOff=0.362269 peakOn=0.351206 clipOn=0 diffRel_dB=5.70577 invertedDiffRel_dB=-5.48119 changed=359648 fnvOff=2f8d3b34834bd5fa fnvOn=f93870503e5c8b8c
+  ssm192 pass=0 solverFallbacks=0 held=0
+  ssm192 pass=1 solverFallbacks=0 held=0
+ROUTE ssm192 frames=360000 rmsOff=0.0364707 rmsOn=0.0365107 peakOff=0.363748 peakOn=0.354322 clipOn=0 diffRel_dB=5.67974 invertedDiffRel_dB=-5.13803 changed=359648 fnvOff=1aa49997fe41801f fnvOn=4bd92c11d48c4364
+  legacyq96 pass=0 solverFallbacks=0 held=0
+  legacyq96 pass=1 solverFallbacks=0 held=0
+ROUTE legacyq96 frames=360000 rmsOff=0.0365925 rmsOn=0.0367201 peakOff=0.398066 peakOn=0.393882 clipOn=0 diffRel_dB=5.71189 invertedDiffRel_dB=-5.39958 changed=359648 fnvOff=c3b919fc19de0f1f fnvOn=1c8c26a42dfec102
+  eiii96 pass=0 solverFallbacks=0 held=0
+  eiii96 pass=1 solverFallbacks=0 held=0
+ROUTE eiii96 frames=360000 rmsOff=0.0336442 rmsOn=0.0336607 peakOff=0.37959 peakOn=0.371327 clipOn=0 diffRel_dB=5.77878 invertedDiffRel_dB=-6.60338 changed=359648 fnvOff=823d16cd54d43b2d fnvOn=d8233e50d183431d
+  ssm96native pass=0 solverFallbacks=0 held=0
+  ssm96native pass=1 solverFallbacks=0 held=0
+ROUTE ssm96native frames=360000 rmsOff=0.00435341 rmsOn=0.00435619 peakOff=0.028531 peakOn=0.0284955 clipOn=0 diffRel_dB=5.9777 invertedDiffRel_dB=-13.7798 changed=359645 fnvOff=d030f9df49c452f0 fnvOn=85df0db4fafc77d6
+  ssm192native pass=0 solverFallbacks=0 held=0
+  ssm192native pass=1 solverFallbacks=0 held=0
+ROUTE ssm192native frames=360000 rmsOff=0.00435379 rmsOn=0.0043569 peakOff=0.0285087 peakOn=0.028529 clipOn=0 diffRel_dB=5.97285 invertedDiffRel_dB=-13.3167 changed=359645 fnvOff=6988ec3e5e4bf450 fnvOn=6c1217542dedcf62
+  legacyq96native pass=0 solverFallbacks=0 held=0
+  legacyq96native pass=1 solverFallbacks=0 held=0
+ROUTE legacyq96native frames=360000 rmsOff=0.00435345 rmsOn=0.00435635 peakOff=0.028533 peakOn=0.0285017 clipOn=0 diffRel_dB=5.97781 invertedDiffRel_dB=-13.7795 changed=359645 fnvOff=5592d8001811427c fnvOn=190b71ecdb202eb7
+  eiii96native pass=0 solverFallbacks=0 held=0
+  eiii96native pass=1 solverFallbacks=0 held=0
+ROUTE eiii96native frames=360000 rmsOff=0.00427297 rmsOn=0.00427535 peakOff=0.0283163 peakOn=0.0283477 clipOn=0 diffRel_dB=5.98356 invertedDiffRel_dB=-14.413 changed=359645 fnvOff=f76c76deca34f94d fnvOn=6088baa589c867a4
+  ssm2m96 pass=0 solverFallbacks=0 held=0
+  ssm2m96 pass=1 solverFallbacks=0 held=0
+ROUTE ssm2m96 frames=360000 rmsOff=0.0272164 rmsOn=0.0229566 peakOff=0.0998258 peakOn=0.0752423 clipOn=0 diffRel_dB=4.98639 invertedDiffRel_dB=-5.67745 changed=359999 fnvOff=2f986100de389aa0 fnvOn=ae6bfb075a14ec9a
+  ssm2m192 pass=0 solverFallbacks=0 held=0
+  ssm2m192 pass=1 solverFallbacks=0 held=0
+ROUTE ssm2m192 frames=360000 rmsOff=0.0272093 rmsOn=0.0229579 peakOff=0.103845 peakOn=0.0747084 clipOn=0 diffRel_dB=4.96128 invertedDiffRel_dB=-5.38147 changed=359999 fnvOff=90cf2847428e9985 fnvOn=900ceebb8209e36b
+  ssm2m96native pass=0 solverFallbacks=0 held=0
+  ssm2m96native pass=1 solverFallbacks=0 held=0
+ROUTE ssm2m96native frames=360000 rmsOff=0.00408613 rmsOn=0.00406251 peakOff=0.0266953 peakOn=0.0258974 clipOn=0 diffRel_dB=5.94996 invertedDiffRel_dB=-13.8208 changed=359999 fnvOff=859d772cdb563223 fnvOn=c2d03d28ac6bac4d
+  ssm2m192native pass=0 solverFallbacks=0 held=0
+  ssm2m192native pass=1 solverFallbacks=0 held=0
+ROUTE ssm2m192native frames=360000 rmsOff=0.00408627 rmsOn=0.00406295 peakOff=0.0267051 peakOn=0.0259047 clipOn=0 diffRel_dB=5.94516 invertedDiffRel_dB=-13.3611 changed=359999 fnvOff=40bb78f22c86de13 fnvOn=a3074d5cfb5b91c5

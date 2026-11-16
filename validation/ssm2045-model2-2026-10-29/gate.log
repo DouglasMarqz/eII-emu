@@ -1,0 +1,70 @@
+==== [build] tools\build-win64-vst3.ps1 (O3/LTO, official recipe incl. Steinberg validator)
+VST3_SCRIPT_EXIT=0
+PASS model switch destroys service HWND before freeing target
+PASS queued old timer cannot call released service
+PASS normal close hides retained service
+PASS retained service can reopen
+PASS external HWND destruction clears ownership safely
+PASS reentrant model switch can detect active dispatch and defer deletion
+Filter service lifecycle regression passed
+[Accuracy: Sample, 1 Parameters, Change every100 Samples]
+Info:  ===Accuracy: Sample, 1 Parameters, Change every100 Samples ====================================
+Info:  64bit Audio Processing not supported.
+[Succeeded]
+-------------------------------------------------------------
+Result: 47 tests passed, 0 tests failed
+-------------------------------------------------------------
+0E641A12CB125762C1F81091553D7CAFE2FA40145F588F3AC3F06A20F7481F57
+==== [suite] tools\run_suite_win64.py (default 1MB stack)
+SUITE total=97 pass=97 fail=0  wall=45s
+==== [fingerprints]
+BUILD_EXIT=0
+FINGERPRINT legacy48 ref s3528=0 fnv=8f54fb4bcd693ee6
+FINGERPRINT legacy48 ref s3528=1 fnv=e9167e98f18859fb
+FINGERPRINT ssm96 ref s3528=0 fnv=238e05ba08dbf298 rms=0.162156
+FINGERPRINT ssm96 ref s3528=1 fnv=dd84d67d223e064 rms=0.150921
+FINGERPRINT ssm96 native s3528=0 fnv=bf0386c0e3ab0e1 rms=0.194696
+FINGERPRINT ssm96 native s3528=1 fnv=5a9be26ff5d8661a rms=0.188367
+FINGERPRINT ssm192 ref s3528=0 fnv=485d58e32530a888 rms=0.161609
+FINGERPRINT ssm192 ref s3528=1 fnv=f83a0dc2e8ac3b8f rms=0.150245
+FINGERPRINT ssm192 native s3528=0 fnv=9473e5f5928f2560 rms=0.17124
+FINGERPRINT ssm192 native s3528=1 fnv=e43ec0c22a169a4c rms=0.163861
+FINGERPRINT legacyq96 ref s3528=0 fnv=d24c1d9040c6a608 rms=0.447986
+FINGERPRINT legacyq96 ref s3528=1 fnv=f87273874d3bf20a rms=0.422521
+FINGERPRINT legacyq96 native s3528=0 fnv=5e69411c82f70ba5 rms=0.537017
+FINGERPRINT legacyq96 native s3528=1 fnv=b3fa4f94693876fe rms=0.516408
+FINGERPRINT eiii96 ref s3528=0 fnv=4ca3124ec59df87a rms=0.213045
+FINGERPRINT eiii96 ref s3528=1 fnv=6ce5ef6aaac72ba9 rms=0.191033
+FINGERPRINT eiii96 native s3528=0 fnv=619adbe4a6011d15 rms=0.251596
+FINGERPRINT eiii96 native s3528=1 fnv=1798ef5d16ba5d55 rms=0.235616
+FINGERPRINT ssm2m96 ref s3528=0 fnv=1e46c386510fb6b4 rms=0.0659147
+FINGERPRINT ssm2m96 ref s3528=1 fnv=63ea887e7553bb81 rms=0.0573048
+FINGERPRINT ssm2m96 native s3528=0 fnv=88b84539ecfc7c88 rms=0.0495244
+FINGERPRINT ssm2m96 native s3528=1 fnv=889f67df503fb629 rms=0.0466756
+FINGERPRINT ssm2m192 ref s3528=0 fnv=d8fd347a7e79dfe rms=0.0659585
+FINGERPRINT ssm2m192 ref s3528=1 fnv=dbb084a22bb7092d rms=0.0574234
+FINGERPRINT ssm2m192 native s3528=0 fnv=461d6fdc5e0b7591 rms=0.0504541
+FINGERPRINT ssm2m192 native s3528=1 fnv=c5aee587e2c5d7ab rms=0.0463276
+RUN_EXIT=0
+==== [git status]
+ M CMakeLists.txt
+ M memory.md
+ M src/chip_audio_worker.h
+ M src/filter_calibration.h
+ M src/filter_service_profiles.h
+ M src/nonlinear_voice.h
+ M src/runtime_audio.h
+ M src/vst3/plugin_editor.h
+ M src/vst3/plugin_engine.h
+ M src/vst3/plugin_state.h
+ M src/windows_filter_service.h
+ M state.json
+ M tools/analog_audit_probe.cpp
+ M tools/model_fingerprint_probe.cpp
+?? docs/SSM2045_MODEL2.md
+?? src/ssm2045_model2.h
+?? tests/ssm2_model_tests.cpp
+?? tools/ssm2_cpu_bench.cpp
+?? tools/ssm2_lab.cpp
+?? validation/ssm2045-model2-2026-10-29/
+GATE_DONE

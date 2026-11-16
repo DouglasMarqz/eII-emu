@@ -1,0 +1,8 @@
+BENCH SSM2045 96k            8 voices: 0.2422 CPU s per audio s  (iterations/sample 1.53, fallbacks 0) acc=2.14015
+BENCH SSM2045 192k           8 voices: 0.4297 CPU s per audio s  (iterations/sample 1.36, fallbacks 0) acc=-0.737997
+BENCH Legacy+Q 96k           8 voices: 0.0938 CPU s per audio s  (iterations/sample 1.06, fallbacks 0) acc=14.3463
+BENCH EIII CEM 96k           8 voices: 0.1328 CPU s per audio s  (iterations/sample 0.00, fallbacks 0) acc=2.12207
+BENCH SSM2045 model2 96k     8 voices: 0.3516 CPU s per audio s  (iterations/sample 2.84, fallbacks 0) acc=0.516791
+BENCH SSM2045 model2 192k    8 voices: 0.6016 CPU s per audio s  (iterations/sample 2.51, fallbacks 0) acc=-1.71151
+BUILD_EXIT=0
+DONE_C4B

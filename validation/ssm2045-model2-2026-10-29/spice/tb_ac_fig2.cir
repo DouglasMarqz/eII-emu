@@ -1,0 +1,38 @@
+* Fig.2-style AC: three 15k inputs (5k Thevenin), V5 swept, 4P output
+.include ssm2045_m2.lib
+.param v5=0
+Vcc 18 0 15
+Vee 10 0 -6.8
+Vin in 0 dc 0 ac 1
+Rs  in 2 5k
+V5  5 0 {v5}
+C1 3 0 10n
+C2 4 0 3.3n
+C3 6 0 10n
+C4 7 0 680p
+RL1 1 0 10.91k
+RL8 8 0 10.91k
+Rq 17 0 1e9
+R11 11 0 910
+R12 12 0 910
+R13 13 0 200
+R14 14 0 1
+R15 15 0 1e9
+R16 16 0 1e9
+X 1 2 3 4 5 6 7 8 0 10 11 12 13 14 15 16 17 18 SSM2045M2
+.options temp=25 tnom=25
+.control
+let v5list=( -0.09 -0.06 -0.03 0 0.03 0.06 0.09 )
+foreach t 0 25 50 75
+ set temp=$t
+ foreach v -0.09 -0.06 -0.03 0 0.03 0.06 0.09
+  alter V5 dc=$v
+  ac dec 40 2 200k
+  meas ac g0 find vdb(8) at=2.5
+  let lvl=g0-3.0103
+  meas ac f3 when vdb(8)=lvl fall=1
+  echo "AC temp=$t v5=$v f3=$&f3 g0db=$&g0" >> ac_fig2.out
+ end
+end
+.endc
+.end

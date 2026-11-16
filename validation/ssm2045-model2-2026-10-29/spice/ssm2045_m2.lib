@@ -1,0 +1,98 @@
+* ============================================================================
+* SSM2045 model-2 SPICE reference (independent of the GLM ssm2045.lib).
+* Built from the SSMT 1983 datasheet Figure 1 block diagram:
+*   bipolar differential-pair OTAs with a resistive input attenuator (a),
+*   tails from one e^-x converter (two matched NPN, pin 5),
+*   G_Q diff pair biased by pin 17 -> 1.8k -> grounded-base PNP,
+*   class-A emitter-follower buffers with a 750 uA pull-down (PDF2),
+*   SIG IN / section-2 summing nodes with 900R and 8.1k returns,
+*   VCA cells: diff pair (attenuator aV) biased via 450R + PNP (base pin 14/GND).
+* Attenuators and mirrors are ideal controlled sources; BJTs are SPICE devices
+* (thermal voltage, PTAT behaviour and shot noise come from the simulator).
+* Pins: 1=2P 2=SIG 3=C1 4=C2 5=FC 6=C3 7=C4 8=4P 9=GND 10=-V 11=MIX1- 12=MIX2+
+*       13=MIXOUT 14=EXPO 15=LIN2 16=LIN1 17=Q 18=+V
+* ============================================================================
+.model QN NPN(IS=1e-15 BF=1e6 VAF=1e4)
+.model QE NPN(IS=1e-15 BF=12.6 VAF=1e4)
+.model QP PNP(IS=7.26e-16 BF=1e6 VAF=1e4)
+.model QO NPN(IS=1e-14 BF=200 VAF=1e4)
+
+* OTA: out current = I(tail)*tanh(a*(inp-inn)/2Vt) into node "out" (sourcing +).
+* Tail current = V(vtail) [A per V] (ideal mirror of the controlling current).
+.subckt OTA inp inn out vtail gnd vcc params: a=0.433
+Ea   bp gnd inp inn {a}
+Q1   c1 bp e QN
+Q2   c2 gnd e QN
+Gt   e gnd vtail gnd 1
+Vc1  vcc c1 0
+Vc2  vcc c2 0
+Fo1  gnd out Vc1 1
+Fo2  out gnd Vc2 1
+.ends OTA
+
+.model DCLAMP D(IS=1e-12 N=1.0)
+.subckt SSM2045M2 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 params: a=0.433 aq=0.10396 av=0.42 tail0=1.26e-5 eta=0.9239 isink=750u head=1.5
+* ---- OTA output compliance: clamp diodes to (V+ - head) and (V- + head) --------
+Ehi vhi 9 18 9 1
+Vhh vhi vhic {head}
+Elo vlo 9 10 9 1
+Vlh vloc vlo {head}
+Dh3 3 vhic DCLAMP
+Dl3 vloc 3 DCLAMP
+Dh4 4 vhic DCLAMP
+Dl4 vloc 4 DCLAMP
+Dh6 6 vhic DCLAMP
+Dl6 vloc 6 DCLAMP
+Dh7 7 vhic DCLAMP
+Dl7 vloc 7 DCLAMP
+* ---- e^-x converter: Iout = Iref*exp(-eta*V5/Vt); QR base at eta*V5 -------
+Ib5   5 9 1u
+Eatt  b5 9 5 9 {eta}
+* reference side: Iref forced into QR collector by an ideal loop on node ce
+Iref  9 cr {tail0}
+QR    cr b5 ce QN
+Eloop ce 9 cr 9 -1e4
+QO2   co 9 ce QN
+Vco   18 co 0
+* ---- tail distribution: V(vt) = I(Vco) (current-controlled voltage, 1 V/A) ----
+Htl   vt 9 Vco 1
+Rin   2 9 900
+Rfb1  1 2 8.1k
+X1    2 3 3 vt 9 18 OTA params: a={a}
+X2    9 3 4 vt 9 18 OTA params: a={a}
+Rnode n2 9 900
+Rfa   1 n2 8.1k
+Rfb2  8 n2 8.1k
+X3    n2 6 6 vt 9 18 OTA params: a={a}
+X4    9 6 7 vt 9 18 OTA params: a={a}
+* ---- buffers: op-amp driven NPN emitter follower, 750 uA pull-down -------------
+Eb1  bb1 9 4 1 1e4
+Rb1  bb1 bq1 1k
+QB1  18 bq1 1 QO
+Is1  1 10 {isink}
+Eb8  bb8 9 7 8 1e4
+Rb8  bb8 bq8 1k
+QB8  18 bq8 8 QO
+Is8  8 10 {isink}
+* ---- Q amplifier: pin17 -> 1.8k -> PNP (base GND) -> G_Q tail -------------------
+Rq   17 eq 1.8k
+QQ   cq 9 eq QP
+Vcq  cq tq 0
+Rtq  tq 10 1
+Hq   vq 9 Vcq 1
+XQ   2 8 2 vq 9 18 OTA params: a={aq}
+* ---- VCA2: pin15 -> 450R -> PNP (base pin 14) -> cell tail; input pin 12 ----------
+Rv2  15 ev2 450
+QV2  cv2 14 ev2 QP
+Vcv2 cv2 tv2 0
+Rtv2 tv2 10 1
+Hv2  vv2 9 Vcv2 1
+XV2  12 9 13 vv2 9 18 OTA params: a={av}
+* ---- VCA1: pin16 -> 450R -> PNP (base GND) -> cell tail; input pin 11 (inverting) --
+Rv1  16 ev1 450
+QV1  cv1 9 ev1 QP
+Vcv1 cv1 tv1 0
+Rtv1 tv1 10 1
+Hv1  vv1 9 Vcv1 1
+XV1  9 11 13 vv1 9 18 OTA params: a={av}
+.ends SSM2045M2

@@ -1,0 +1,21 @@
+* EII full drive: Y = 13.5 V peak sine 400 Hz at FCV 0 / 2.5, QCV 0 / 5
+.include ssm2045_m2.lib
+.include eii_board.inc
+.options reltol=1e-5 abstol=1e-13 vntol=1e-8
+.control
+alter Vy sin = [ 0 13.5 400 ]
+foreach f 0 2.5
+ foreach q 0 5
+  alter Vfcv dc=$f
+  alter Vqcv dc=$q
+  tran 1u 0.06 0.04 1u
+  meas tran vmax max v(8)
+  meas tran vmin min v(8)
+  meas tran vrms rms v(8)
+  meas tran x7max max v(7)
+  meas tran x7min min v(7)
+  echo "DRIVE fcv=$f qcv=$q max=$&vmax min=$&vmin rms=$&vrms c4max=$&x7max c4min=$&x7min" >> eii_drive.out
+ end
+end
+.endc
+.end

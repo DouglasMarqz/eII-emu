@@ -1,0 +1,38 @@
+* Fig.2 THD vs level: sine through 5k, V5=0 (fc=633 Hz)
+.include ssm2045_m2.lib
+.param amp=0.4917 fr=632.46
+Vcc 18 0 15
+Vee 10 0 -6.8
+Vin in 0 sin(0 {amp} {fr})
+Rs  in 2 5k
+V5  5 0 0
+C1 3 0 10n
+C2 4 0 3.3n
+C3 6 0 10n
+C4 7 0 680p
+RL1 1 0 10.91k
+RL8 8 0 10.91k
+Rq 17 0 1e9
+R11 11 0 910
+R12 12 0 910
+R13 13 0 200
+R14 14 0 1
+R15 15 0 1e9
+R16 16 0 1e9
+X 1 2 3 4 5 6 7 8 0 10 11 12 13 14 15 16 17 18 SSM2045M2
+.options temp=25 tnom=25 reltol=1e-6 abstol=1e-14 vntol=1e-9
+.control
+foreach fr 158.115 632.46
+ foreach oc 0.02 0.05 0.075 0.15 0.3 0.6
+  let a = $oc*5900/900
+  alter Vin sin = [ 0 $&a $fr ]
+  let per=1/$fr
+  let tstop=60*per
+  let tstep=per/512
+  tran $&tstep $&tstop 0 $&tstep
+  echo "THDCASE fr=$fr oc=$oc"
+  fourier $fr v(8)
+ end
+end
+.endc
+.end

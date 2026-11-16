@@ -1,0 +1,741 @@
+Using SPARSE 1.3 as Direct Linear Solver
+
+Note: No compatibility mode selected!
+
+
+Circuit: * fig.2 oscillation: i_q fixed (current into pin 17), initial kick, 4p output
+
+Doing analysis at TEMP = 25.000000 and TNOM = 25.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+18                                          15
+10                                        -6.8
+in                                           0
+2                                 -3.38813e-21
+5                                            0
+3                                 -3.38813e-21
+4                                  6.46923e-05
+6                                            0
+7                                  6.46923e-05
+1                                  2.41347e-20
+8                                  2.71051e-20
+17                                    0.919607
+11                                           0
+12                                           0
+13                                           0
+14                                -6.80073e-12
+15                                -7.25747e-07
+16                                -7.25747e-07
+x.b5                                         0
+x.cr                               5.97531e-05
+x.ce                                 -0.597531
+x.co                                        15
+x.vt                               1.26189e-05
+x.x1.bp                                      0
+x.x1.c1                                     15
+x.x1.e                               -0.579722
+x.x1.c2                                     15
+x.x2.bp                            1.46706e-21
+x.x2.c1                                     15
+x.x2.e                               -0.579722
+x.x2.c2                                     15
+x.n2                                         0
+x.x3.bp                                      0
+x.x3.c1                                     15
+x.x3.e                               -0.579722
+x.x3.c2                                     15
+x.x4.bp                                      0
+x.x4.c1                                     15
+x.x4.e                               -0.579722
+x.x4.c2                                     15
+x.bb1                                 0.646923
+x.bq1                                 0.643197
+x.bb8                                 0.646923
+x.bq8                                 0.643197
+x.eq                                  0.667607
+x.cq                                  -6.79986
+x.tq                                  -6.79986
+x.vq                                   0.00014
+x.xq.bp                           -3.17007e-21
+x.xq.c1                                     15
+x.xq.e                                -0.64155
+x.xq.c2                                     15
+x.ev2                             -7.25748e-07
+x.cv2                                     -6.8
+x.tv2                                     -6.8
+x.vv2                              6.80145e-12
+x.xv2.bp                                     0
+x.xv2.c1                                    15
+x.xv2.e                              -0.207271
+x.xv2.c2                                    15
+x.ev1                             -7.25748e-07
+x.cv1                                     -6.8
+x.tv1                                     -6.8
+x.vv1                              6.80145e-12
+x.xv1.bp                                     0
+x.xv1.c1                                    15
+x.xv1.e                              -0.207271
+x.xv1.c2                                    15
+v.x.xv1.vc2#branch                 3.31945e-11
+v.x.xv1.vc1#branch                 3.31945e-11
+v.x.xv2.vc2#branch                 3.31945e-11
+v.x.xv2.vc1#branch                 3.31945e-11
+v.x.xq.vc2#branch                  6.99999e-05
+v.x.xq.vc1#branch                  6.99999e-05
+v.x.x4.vc2#branch                  6.30949e-06
+v.x.x4.vc1#branch                  6.30949e-06
+v.x.x3.vc2#branch                  6.30949e-06
+v.x.x3.vc1#branch                  6.30949e-06
+v.x.x2.vc2#branch                  6.30949e-06
+v.x.x2.vc1#branch                  6.30949e-06
+v.x.x1.vc2#branch                  6.30949e-06
+v.x.x1.vc1#branch                  6.30949e-06
+h.x.hv1#branch                               0
+v.x.vcv1#branch                    6.80145e-12
+h.x.hv2#branch                               0
+v.x.vcv2#branch                    6.80145e-12
+h.x.hq#branch                                0
+v.x.vcq#branch                         0.00014
+h.x.htl#branch                               0
+v.x.vco#branch                     1.26189e-05
+e.x.xv1.ea#branch                  1.47937e-11
+e.x.xv2.ea#branch                  1.47937e-11
+e.x.xq.ea#branch                  -5.55356e-11
+e.x.eb8#branch                    -3.72601e-06
+e.x.eb1#branch                    -3.72601e-06
+e.x.x4.ea#branch                   8.12127e-12
+e.x.x3.ea#branch                   8.12127e-12
+e.x.x2.ea#branch                   8.12127e-12
+e.x.x1.ea#branch                   8.12127e-12
+e.x.eloop#branch                   2.52189e-05
+e.x.eatt#branch                   -1.31975e-11
+v5#branch                               -1e-06
+vin#branch                        -6.77626e-25
+vee#branch                             0.00164
+vcc#branch                         -0.00169564
+
+ Reference value :  1.80435e-02 Reference value :  3.94755e-02 Reference value :  6.08995e-02 Reference value :  8.37035e-02 Reference value :  1.06875e-01 Reference value :  1.30005e-01 Reference value :  1.53173e-01 Reference value :  1.74037e-01 Reference value :  1.92347e-01 Reference value :  2.12145e-01 Reference value :  2.30933e-01 Reference value :  2.51705e-01 Reference value :  2.74129e-01 Reference value :  2.95955e-01 Reference value :  3.18255e-01 Reference value :  3.36221e-01 Reference value :  3.55179e-01 Reference value :  3.77645e-01 Reference value :  3.98863e-01 Reference value :  4.19469e-01 Reference value :  4.41035e-01 Reference value :  4.63003e-01 Reference value :  4.84791e-01 Reference value :  5.03879e-01 Reference value :  5.26099e-01 Reference value :  5.47795e-01 Reference value :  5.68321e-01 Reference value :  5.88455e-01 Reference value :  6.09365e-01 Reference value :  6.30395e-01 Reference value :  6.50361e-01 Reference value :  6.66975e-01 Reference value :  6.88841e-01 Reference value :  7.09093e-01 Reference value :  7.30063e-01 Reference value :  7.51971e-01 Reference value :  7.72525e-01 Reference value :  7.93633e-01
+No. of Data Rows : 400021
+vmax                =  1.681733e-16 at=  7.999995e-01
+vmin                =  1.607872e-16 at=  8.000000e-01
+
+Error: measure  t1  when(WHEN) : out of interval
+ meas tran t1 when v(8)=0 rise=200 failed!
+
+
+Error: measure  t2  when(WHEN) : out of interval
+Error: &t1: no such variable.
+Error: &t2: no such variable.
+Using SPARSE 1.3 as Direct Linear Solver
+ meas tran t2 when v(8)=0 rise=300 failed!
+
+Doing analysis at TEMP = 25.000000 and TNOM = 25.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+18                                          15
+10                                        -6.8
+in                                           0
+2                                  3.38813e-21
+5                                            0
+3                                  3.38813e-21
+4                                  6.46923e-05
+6                                            0
+7                                  6.46923e-05
+1                                 -6.78581e-21
+8                                 -1.35525e-20
+17                                    0.935435
+11                                           0
+12                                           0
+13                                           0
+14                                -6.80073e-12
+15                                -7.25747e-07
+16                                -7.25747e-07
+x.b5                                         0
+x.cr                               5.97531e-05
+x.ce                                 -0.597531
+x.co                                        15
+x.vt                               1.26189e-05
+x.x1.bp                                      0
+x.x1.c1                                     15
+x.x1.e                               -0.579722
+x.x1.c2                                     15
+x.x2.bp                           -1.46706e-21
+x.x2.c1                                     15
+x.x2.e                               -0.579722
+x.x2.c2                                     15
+x.n2                                         0
+x.x3.bp                                      0
+x.x3.c1                                     15
+x.x3.e                               -0.579722
+x.x3.c2                                     15
+x.x4.bp                                      0
+x.x4.c1                                     15
+x.x4.e                               -0.579722
+x.x4.c2                                     15
+x.bb1                                 0.646923
+x.bq1                                 0.643197
+x.bb8                                 0.646923
+x.bq8                                 0.643197
+x.eq                                  0.669035
+x.cq                                  -6.79985
+x.tq                                  -6.79985
+x.vq                                  0.000148
+x.xq.bp                            1.76115e-21
+x.xq.c1                                     15
+x.xq.e                               -0.642978
+x.xq.c2                                     15
+x.ev2                             -7.25748e-07
+x.cv2                                     -6.8
+x.tv2                                     -6.8
+x.vv2                              6.80145e-12
+x.xv2.bp                                     0
+x.xv2.c1                                    15
+x.xv2.e                              -0.207271
+x.xv2.c2                                    15
+x.ev1                             -7.25748e-07
+x.cv1                                     -6.8
+x.tv1                                     -6.8
+x.vv1                              6.80145e-12
+x.xv1.bp                                     0
+x.xv1.c1                                    15
+x.xv1.e                              -0.207271
+x.xv1.c2                                    15
+v.x.xv1.vc2#branch                 3.31945e-11
+v.x.xv1.vc1#branch                 3.31945e-11
+v.x.xv2.vc2#branch                 3.31945e-11
+v.x.xv2.vc1#branch                 3.31945e-11
+v.x.xq.vc2#branch                  7.39999e-05
+v.x.xq.vc1#branch                  7.39999e-05
+v.x.x4.vc2#branch                  6.30949e-06
+v.x.x4.vc1#branch                  6.30949e-06
+v.x.x3.vc2#branch                  6.30949e-06
+v.x.x3.vc1#branch                  6.30949e-06
+v.x.x2.vc2#branch                  6.30949e-06
+v.x.x2.vc1#branch                  6.30949e-06
+v.x.x1.vc2#branch                  6.30949e-06
+v.x.x1.vc1#branch                  6.30949e-06
+h.x.hv1#branch                               0
+v.x.vcv1#branch                    6.80145e-12
+h.x.hv2#branch                               0
+v.x.vcv2#branch                    6.80145e-12
+h.x.hq#branch                                0
+v.x.vcq#branch                        0.000148
+h.x.htl#branch                               0
+v.x.vco#branch                     1.26189e-05
+e.x.xv1.ea#branch                  1.47937e-11
+e.x.xv2.ea#branch                  1.47937e-11
+e.x.xq.ea#branch                   -5.9531e-11
+e.x.eb8#branch                    -3.72601e-06
+e.x.eb1#branch                    -3.72601e-06
+e.x.x4.ea#branch                   8.12127e-12
+e.x.x3.ea#branch                   8.12127e-12
+e.x.x2.ea#branch                   8.12127e-12
+e.x.x1.ea#branch                   8.12127e-12
+e.x.eloop#branch                   2.52189e-05
+e.x.eatt#branch                   -1.31975e-11
+v5#branch                               -1e-06
+vin#branch                         6.77626e-25
+vee#branch                            0.001648
+vcc#branch                         -0.00170364
+
+ Reference value :  1.47994e-02 Reference value :  3.71414e-02 Reference value :  5.53734e-02 Reference value :  6.95894e-02 Reference value :  9.07774e-02 Reference value :  1.11857e-01 Reference value :  1.28631e-01 Reference value :  1.46247e-01 Reference value :  1.63511e-01 Reference value :  1.84279e-01 Reference value :  2.04869e-01 Reference value :  2.26209e-01 Reference value :  2.47665e-01 Reference value :  2.68113e-01 Reference value :  2.87099e-01 Reference value :  3.03061e-01 Reference value :  3.24395e-01 Reference value :  3.42465e-01 Reference value :  3.65539e-01 Reference value :  3.88649e-01 Reference value :  4.11789e-01 Reference value :  4.34979e-01 Reference value :  4.58381e-01 Reference value :  4.81849e-01 Reference value :  5.03965e-01 Reference value :  5.22963e-01 Reference value :  5.45153e-01 Reference value :  5.68011e-01 Reference value :  5.91507e-01 Reference value :  6.14583e-01 Reference value :  6.33159e-01 Reference value :  6.55275e-01 Reference value :  6.75359e-01 Reference value :  6.98443e-01 Reference value :  7.17397e-01 Reference value :  7.40121e-01 Reference value :  7.63065e-01 Reference value :  7.86389e-01
+No. of Data Rows : 400021
+vmax                =  2.626129e-14 at=  7.029854e-01
+vmin                =  -2.625233e-14 at=  7.033114e-01
+t1                  =  1.286311e-01
+Using SPARSE 1.3 as Direct Linear Solver
+t2                  =  1.935353e-01
+Doing analysis at TEMP = 25.000000 and TNOM = 25.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+18                                          15
+10                                        -6.8
+in                                           0
+2                                 -3.38813e-21
+5                                            0
+3                                 -3.38813e-21
+4                                  6.46923e-05
+6                                 -3.38813e-21
+7                                  6.46923e-05
+1                                  1.43473e-20
+8                                            0
+17                                    0.939379
+11                                           0
+12                                           0
+13                                           0
+14                                -6.80073e-12
+15                                -7.25747e-07
+16                                -7.25747e-07
+x.b5                                         0
+x.cr                               5.97531e-05
+x.ce                                 -0.597531
+x.co                                        15
+x.vt                               1.26189e-05
+x.x1.bp                                      0
+x.x1.c1                                     15
+x.x1.e                               -0.579722
+x.x1.c2                                     15
+x.x2.bp                            1.46706e-21
+x.x2.c1                                     15
+x.x2.e                               -0.579722
+x.x2.c2                                     15
+x.n2                              -3.38813e-21
+x.x3.bp                                      0
+x.x3.c1                                     15
+x.x3.e                               -0.579722
+x.x3.c2                                     15
+x.x4.bp                            1.46706e-21
+x.x4.c1                                     15
+x.x4.e                               -0.579722
+x.x4.c2                                     15
+x.bb1                                 0.646923
+x.bq1                                 0.643197
+x.bb8                                 0.646923
+x.bq8                                 0.643197
+x.eq                                  0.669379
+x.cq                                  -6.79985
+x.tq                                  -6.79985
+x.vq                                   0.00015
+x.xq.bp                            -3.5223e-22
+x.xq.c1                                     15
+x.xq.e                               -0.643323
+x.xq.c2                                     15
+x.ev2                             -7.25748e-07
+x.cv2                                     -6.8
+x.tv2                                     -6.8
+x.vv2                              6.80145e-12
+x.xv2.bp                                     0
+x.xv2.c1                                    15
+x.xv2.e                              -0.207271
+x.xv2.c2                                    15
+x.ev1                             -7.25748e-07
+x.cv1                                     -6.8
+x.tv1                                     -6.8
+x.vv1                              6.80145e-12
+x.xv1.bp                                     0
+x.xv1.c1                                    15
+x.xv1.e                              -0.207271
+x.xv1.c2                                    15
+v.x.xv1.vc2#branch                 3.31945e-11
+v.x.xv1.vc1#branch                 3.31945e-11
+v.x.xv2.vc2#branch                 3.31945e-11
+v.x.xv2.vc1#branch                 3.31945e-11
+v.x.xq.vc2#branch                  7.49999e-05
+v.x.xq.vc1#branch                  7.49999e-05
+v.x.x4.vc2#branch                  6.30949e-06
+v.x.x4.vc1#branch                  6.30949e-06
+v.x.x3.vc2#branch                  6.30949e-06
+v.x.x3.vc1#branch                  6.30949e-06
+v.x.x2.vc2#branch                  6.30949e-06
+v.x.x2.vc1#branch                  6.30949e-06
+v.x.x1.vc2#branch                  6.30949e-06
+v.x.x1.vc1#branch                  6.30949e-06
+h.x.hv1#branch                               0
+v.x.vcv1#branch                    6.80145e-12
+h.x.hv2#branch                               0
+v.x.vcv2#branch                    6.80145e-12
+h.x.hq#branch                                0
+v.x.vcq#branch                         0.00015
+h.x.htl#branch                               0
+v.x.vco#branch                     1.26189e-05
+e.x.xv1.ea#branch                  1.47937e-11
+e.x.xv2.ea#branch                  1.47937e-11
+e.x.xq.ea#branch                  -6.05298e-11
+e.x.eb8#branch                    -3.72601e-06
+e.x.eb1#branch                    -3.72601e-06
+e.x.x4.ea#branch                   8.12127e-12
+e.x.x3.ea#branch                   8.12127e-12
+e.x.x2.ea#branch                   8.12127e-12
+e.x.x1.ea#branch                   8.12127e-12
+e.x.eloop#branch                   2.52189e-05
+e.x.eatt#branch                   -1.31975e-11
+v5#branch                               -1e-06
+vin#branch                        -6.77626e-25
+vee#branch                             0.00165
+vcc#branch                         -0.00170564
+
+ Reference value :  8.27342e-03 Reference value :  3.12514e-02 Reference value :  5.43634e-02 Reference value :  7.73454e-02 Reference value :  1.00403e-01 Reference value :  1.19191e-01 Reference value :  1.40347e-01 Reference value :  1.62685e-01 Reference value :  1.84733e-01 Reference value :  2.03733e-01 Reference value :  2.26615e-01 Reference value :  2.48615e-01 Reference value :  2.70923e-01 Reference value :  2.92939e-01 Reference value :  3.15567e-01 Reference value :  3.34833e-01 Reference value :  3.51121e-01 Reference value :  3.73075e-01 Reference value :  3.92135e-01 Reference value :  4.15147e-01 Reference value :  4.37947e-01 Reference value :  4.61015e-01 Reference value :  4.84249e-01 Reference value :  5.07481e-01 Reference value :  5.30387e-01 Reference value :  5.53277e-01 Reference value :  5.73667e-01 Reference value :  5.94519e-01 Reference value :  6.14551e-01 Reference value :  6.32157e-01 Reference value :  6.51561e-01 Reference value :  6.74537e-01 Reference value :  6.97457e-01 Reference value :  7.20373e-01 Reference value :  7.41695e-01 Reference value :  7.58871e-01 Reference value :  7.81671e-01
+No. of Data Rows : 400021
+vmax                =  3.667247e-04 at=  6.001974e-01
+vmin                =  -3.667050e-04 at=  6.005214e-01
+t1                  =  1.289046e-01
+Using SPARSE 1.3 as Direct Linear Solver
+t2                  =  1.936204e-01
+Doing analysis at TEMP = 25.000000 and TNOM = 25.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+18                                          15
+10                                        -6.8
+in                                           0
+2                                            0
+5                                            0
+3                                            0
+4                                  6.46923e-05
+6                                            0
+7                                  6.46923e-05
+1                                 -1.52996e-22
+8                                 -1.35525e-20
+17                                     0.94332
+11                                           0
+12                                           0
+13                                           0
+14                                -6.80073e-12
+15                                -7.25747e-07
+16                                -7.25747e-07
+x.b5                                         0
+x.cr                               5.97531e-05
+x.ce                                 -0.597531
+x.co                                        15
+x.vt                               1.26189e-05
+x.x1.bp                                      0
+x.x1.c1                                     15
+x.x1.e                               -0.579722
+x.x1.c2                                     15
+x.x2.bp                                      0
+x.x2.c1                                     15
+x.x2.e                               -0.579722
+x.x2.c2                                     15
+x.n2                                         0
+x.x3.bp                                      0
+x.x3.c1                                     15
+x.x3.e                               -0.579722
+x.x3.c2                                     15
+x.x4.bp                                      0
+x.x4.c1                                     15
+x.x4.e                               -0.579722
+x.x4.c2                                     15
+x.bb1                                 0.646923
+x.bq1                                 0.643197
+x.bb8                                 0.646923
+x.bq8                                 0.643197
+x.eq                                   0.66972
+x.cq                                  -6.79985
+x.tq                                  -6.79985
+x.vq                                  0.000152
+x.xq.bp                            1.40892e-21
+x.xq.c1                                     15
+x.xq.e                               -0.643663
+x.xq.c2                                     15
+x.ev2                             -7.25748e-07
+x.cv2                                     -6.8
+x.tv2                                     -6.8
+x.vv2                              6.80145e-12
+x.xv2.bp                                     0
+x.xv2.c1                                    15
+x.xv2.e                              -0.207271
+x.xv2.c2                                    15
+x.ev1                             -7.25748e-07
+x.cv1                                     -6.8
+x.tv1                                     -6.8
+x.vv1                              6.80145e-12
+x.xv1.bp                                     0
+x.xv1.c1                                    15
+x.xv1.e                              -0.207271
+x.xv1.c2                                    15
+v.x.xv1.vc2#branch                 3.31945e-11
+v.x.xv1.vc1#branch                 3.31945e-11
+v.x.xv2.vc2#branch                 3.31945e-11
+v.x.xv2.vc1#branch                 3.31945e-11
+v.x.xq.vc2#branch                  7.59999e-05
+v.x.xq.vc1#branch                  7.59999e-05
+v.x.x4.vc2#branch                  6.30949e-06
+v.x.x4.vc1#branch                  6.30949e-06
+v.x.x3.vc2#branch                  6.30949e-06
+v.x.x3.vc1#branch                  6.30949e-06
+v.x.x2.vc2#branch                  6.30949e-06
+v.x.x2.vc1#branch                  6.30949e-06
+v.x.x1.vc2#branch                  6.30949e-06
+v.x.x1.vc1#branch                  6.30949e-06
+h.x.hv1#branch                               0
+v.x.vcv1#branch                    6.80145e-12
+h.x.hv2#branch                               0
+v.x.vcv2#branch                    6.80145e-12
+h.x.hq#branch                                0
+v.x.vcq#branch                        0.000152
+h.x.htl#branch                               0
+v.x.vco#branch                     1.26189e-05
+e.x.xv1.ea#branch                  1.47937e-11
+e.x.xv2.ea#branch                  1.47937e-11
+e.x.xq.ea#branch                  -6.15287e-11
+e.x.eb8#branch                    -3.72601e-06
+e.x.eb1#branch                    -3.72601e-06
+e.x.x4.ea#branch                   8.12127e-12
+e.x.x3.ea#branch                   8.12127e-12
+e.x.x2.ea#branch                   8.12127e-12
+e.x.x1.ea#branch                   8.12127e-12
+e.x.eloop#branch                   2.52189e-05
+e.x.eatt#branch                   -1.31975e-11
+v5#branch                               -1e-06
+vin#branch                                   0
+vee#branch                            0.001652
+vcc#branch                         -0.00170764
+
+ Reference value :  4.05341e-03 Reference value :  2.70434e-02 Reference value :  4.96694e-02 Reference value :  6.90914e-02 Reference value :  9.01674e-02 Reference value :  1.06603e-01 Reference value :  1.28113e-01 Reference value :  1.48029e-01 Reference value :  1.67769e-01 Reference value :  1.90069e-01 Reference value :  2.12557e-01 Reference value :  2.35197e-01 Reference value :  2.57823e-01 Reference value :  2.80059e-01 Reference value :  3.02901e-01 Reference value :  3.20843e-01 Reference value :  3.43915e-01 Reference value :  3.66567e-01 Reference value :  3.83265e-01 Reference value :  4.05847e-01 Reference value :  4.29085e-01 Reference value :  4.49583e-01 Reference value :  4.70865e-01 Reference value :  4.90773e-01 Reference value :  5.13761e-01 Reference value :  5.36389e-01 Reference value :  5.59351e-01 Reference value :  5.80683e-01 Reference value :  5.98791e-01 Reference value :  6.21519e-01 Reference value :  6.44353e-01 Reference value :  6.65557e-01 Reference value :  6.87535e-01 Reference value :  7.08887e-01 Reference value :  7.31675e-01 Reference value :  7.46677e-01 Reference value :  7.69053e-01 Reference value :  7.91547e-01
+No. of Data Rows : 400021
+vmax                =  7.299837e-02 at=  7.355394e-01
+vmin                =  -7.299837e-02 at=  7.216014e-01
+t1                  =  1.279558e-01
+Using SPARSE 1.3 as Direct Linear Solver
+t2                  =  1.927679e-01
+Doing analysis at TEMP = 25.000000 and TNOM = 25.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+18                                          15
+10                                        -6.8
+in                                           0
+2                                 -3.38813e-21
+5                                            0
+3                                 -3.38813e-21
+4                                  6.46923e-05
+6                                 -3.38813e-21
+7                                  6.46923e-05
+1                                 -3.55965e-20
+8                                 -1.35525e-20
+17                                    0.959038
+11                                           0
+12                                           0
+13                                           0
+14                                -6.80073e-12
+15                                -7.25747e-07
+16                                -7.25747e-07
+x.b5                                         0
+x.cr                               5.97531e-05
+x.ce                                 -0.597531
+x.co                                        15
+x.vt                               1.26189e-05
+x.x1.bp                                      0
+x.x1.c1                                     15
+x.x1.e                               -0.579722
+x.x1.c2                                     15
+x.x2.bp                            1.46706e-21
+x.x2.c1                                     15
+x.x2.e                               -0.579722
+x.x2.c2                                     15
+x.n2                              -3.38813e-21
+x.x3.bp                                      0
+x.x3.c1                                     15
+x.x3.e                               -0.579722
+x.x3.c2                                     15
+x.x4.bp                            1.46706e-21
+x.x4.c1                                     15
+x.x4.e                               -0.579722
+x.x4.c2                                     15
+x.bb1                                 0.646923
+x.bq1                                 0.643197
+x.bb8                                 0.646923
+x.bq8                                 0.643197
+x.eq                                  0.671038
+x.cq                                  -6.79984
+x.tq                                  -6.79984
+x.vq                                   0.00016
+x.xq.bp                            1.05669e-21
+x.xq.c1                                     15
+x.xq.e                               -0.644981
+x.xq.c2                                     15
+x.ev2                             -7.25748e-07
+x.cv2                                     -6.8
+x.tv2                                     -6.8
+x.vv2                              6.80145e-12
+x.xv2.bp                                     0
+x.xv2.c1                                    15
+x.xv2.e                              -0.207271
+x.xv2.c2                                    15
+x.ev1                             -7.25748e-07
+x.cv1                                     -6.8
+x.tv1                                     -6.8
+x.vv1                              6.80145e-12
+x.xv1.bp                                     0
+x.xv1.c1                                    15
+x.xv1.e                              -0.207271
+x.xv1.c2                                    15
+v.x.xv1.vc2#branch                 3.31945e-11
+v.x.xv1.vc1#branch                 3.31945e-11
+v.x.xv2.vc2#branch                 3.31945e-11
+v.x.xv2.vc1#branch                 3.31945e-11
+v.x.xq.vc2#branch                  7.99999e-05
+v.x.xq.vc1#branch                  7.99999e-05
+v.x.x4.vc2#branch                  6.30949e-06
+v.x.x4.vc1#branch                  6.30949e-06
+v.x.x3.vc2#branch                  6.30949e-06
+v.x.x3.vc1#branch                  6.30949e-06
+v.x.x2.vc2#branch                  6.30949e-06
+v.x.x2.vc1#branch                  6.30949e-06
+v.x.x1.vc2#branch                  6.30949e-06
+v.x.x1.vc1#branch                  6.30949e-06
+h.x.hv1#branch                               0
+v.x.vcv1#branch                    6.80145e-12
+h.x.hv2#branch                               0
+v.x.vcv2#branch                    6.80145e-12
+h.x.hq#branch                                0
+v.x.vcq#branch                         0.00016
+h.x.htl#branch                               0
+v.x.vco#branch                     1.26189e-05
+e.x.xv1.ea#branch                  1.47937e-11
+e.x.xv2.ea#branch                  1.47937e-11
+e.x.xq.ea#branch                   -6.5524e-11
+e.x.eb8#branch                    -3.72601e-06
+e.x.eb1#branch                    -3.72601e-06
+e.x.x4.ea#branch                   8.12127e-12
+e.x.x3.ea#branch                   8.12127e-12
+e.x.x2.ea#branch                   8.12127e-12
+e.x.x1.ea#branch                   8.12127e-12
+e.x.eloop#branch                   2.52189e-05
+e.x.eatt#branch                   -1.31975e-11
+v5#branch                               -1e-06
+vin#branch                        -6.77626e-25
+vee#branch                             0.00166
+vcc#branch                         -0.00171564
+
+ Reference value :  1.39953e-02 Reference value :  3.59653e-02 Reference value :  5.73013e-02 Reference value :  7.98913e-02 Reference value :  1.02817e-01 Reference value :  1.25393e-01 Reference value :  1.47691e-01 Reference value :  1.66319e-01 Reference value :  1.89447e-01 Reference value :  2.12515e-01 Reference value :  2.35743e-01 Reference value :  2.58885e-01 Reference value :  2.82077e-01 Reference value :  2.99879e-01 Reference value :  3.22933e-01 Reference value :  3.42481e-01 Reference value :  3.65549e-01 Reference value :  3.88189e-01 Reference value :  4.11071e-01 Reference value :  4.33889e-01 Reference value :  4.52129e-01 Reference value :  4.71933e-01 Reference value :  4.95165e-01 Reference value :  5.17745e-01 Reference value :  5.39161e-01 Reference value :  5.59029e-01 Reference value :  5.80943e-01 Reference value :  6.03173e-01 Reference value :  6.24545e-01 Reference value :  6.45575e-01 Reference value :  6.68033e-01 Reference value :  6.90875e-01 Reference value :  7.13099e-01 Reference value :  7.35599e-01 Reference value :  7.57867e-01 Reference value :  7.80365e-01
+No. of Data Rows : 400021
+vmax                =  1.625979e-01 at=  6.166813e-01
+vmin                =  -1.625979e-01 at=  7.782873e-01
+t1                  =  1.287620e-01
+Using SPARSE 1.3 as Direct Linear Solver
+t2                  =  1.940573e-01
+Doing analysis at TEMP = 25.000000 and TNOM = 25.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+18                                          15
+10                                        -6.8
+in                                           0
+2                                  3.38813e-21
+5                                            0
+3                                  3.38813e-21
+4                                  6.46923e-05
+6                                            0
+7                                  6.46923e-05
+1                                  5.19637e-20
+8                                  1.35525e-20
+17                                     1.00777
+11                                           0
+12                                           0
+13                                           0
+14                                -6.80073e-12
+15                                -7.25747e-07
+16                                -7.25747e-07
+x.b5                                         0
+x.cr                               5.97531e-05
+x.ce                                 -0.597531
+x.co                                        15
+x.vt                               1.26189e-05
+x.x1.bp                                      0
+x.x1.c1                                     15
+x.x1.e                               -0.579722
+x.x1.c2                                     15
+x.x2.bp                           -1.46706e-21
+x.x2.c1                                     15
+x.x2.e                               -0.579722
+x.x2.c2                                     15
+x.n2                                         0
+x.x3.bp                                      0
+x.x3.c1                                     15
+x.x3.e                               -0.579722
+x.x3.c2                                     15
+x.x4.bp                                      0
+x.x4.c1                                     15
+x.x4.e                               -0.579722
+x.x4.c2                                     15
+x.bb1                                 0.646923
+x.bq1                                 0.643197
+x.bb8                                 0.646923
+x.bq8                                 0.643197
+x.eq                                  0.674768
+x.cq                                  -6.79982
+x.tq                                  -6.79982
+x.vq                                  0.000185
+x.xq.bp                           -1.05669e-21
+x.xq.c1                                     15
+x.xq.e                               -0.648711
+x.xq.c2                                     15
+x.ev2                             -7.25748e-07
+x.cv2                                     -6.8
+x.tv2                                     -6.8
+x.vv2                              6.80145e-12
+x.xv2.bp                                     0
+x.xv2.c1                                    15
+x.xv2.e                              -0.207271
+x.xv2.c2                                    15
+x.ev1                             -7.25748e-07
+x.cv1                                     -6.8
+x.tv1                                     -6.8
+x.vv1                              6.80145e-12
+x.xv1.bp                                     0
+x.xv1.c1                                    15
+x.xv1.e                              -0.207271
+x.xv1.c2                                    15
+v.x.xv1.vc2#branch                 3.31945e-11
+v.x.xv1.vc1#branch                 3.31945e-11
+v.x.xv2.vc2#branch                 3.31945e-11
+v.x.xv2.vc1#branch                 3.31945e-11
+v.x.xq.vc2#branch                  9.24998e-05
+v.x.xq.vc1#branch                  9.24998e-05
+v.x.x4.vc2#branch                  6.30949e-06
+v.x.x4.vc1#branch                  6.30949e-06
+v.x.x3.vc2#branch                  6.30949e-06
+v.x.x3.vc1#branch                  6.30949e-06
+v.x.x2.vc2#branch                  6.30949e-06
+v.x.x2.vc1#branch                  6.30949e-06
+v.x.x1.vc2#branch                  6.30949e-06
+v.x.x1.vc1#branch                  6.30949e-06
+h.x.hv1#branch                               0
+v.x.vcv1#branch                    6.80145e-12
+h.x.hv2#branch                               0
+v.x.vcv2#branch                    6.80145e-12
+h.x.hq#branch                                0
+v.x.vcq#branch                        0.000185
+h.x.htl#branch                               0
+v.x.vco#branch                     1.26189e-05
+e.x.xv1.ea#branch                  1.47937e-11
+e.x.xv2.ea#branch                  1.47937e-11
+e.x.xq.ea#branch                   -7.8009e-11
+e.x.eb8#branch                    -3.72601e-06
+e.x.eb1#branch                    -3.72601e-06
+e.x.x4.ea#branch                   8.12127e-12
+e.x.x3.ea#branch                   8.12127e-12
+e.x.x2.ea#branch                   8.12127e-12
+e.x.x1.ea#branch                   8.12127e-12
+e.x.eloop#branch                   2.52189e-05
+e.x.eatt#branch                   -1.31975e-11
+v5#branch                               -1e-06
+vin#branch                         6.77626e-25
+vee#branch                            0.001685
+vcc#branch                         -0.00174064
+
+ Reference value :  2.91089e-03 Reference value :  2.54909e-02 Reference value :  4.83729e-02 Reference value :  7.12569e-02 Reference value :  9.26909e-02 Reference value :  1.15565e-01 Reference value :  1.38465e-01 Reference value :  1.60029e-01 Reference value :  1.82143e-01 Reference value :  2.04553e-01 Reference value :  2.24321e-01 Reference value :  2.46523e-01 Reference value :  2.69315e-01 Reference value :  2.91997e-01 Reference value :  3.14273e-01 Reference value :  3.32067e-01 Reference value :  3.55323e-01 Reference value :  3.78519e-01 Reference value :  4.01703e-01 Reference value :  4.25001e-01 Reference value :  4.48487e-01 Reference value :  4.72001e-01 Reference value :  4.94903e-01 Reference value :  5.12821e-01 Reference value :  5.33485e-01 Reference value :  5.56265e-01 Reference value :  5.77767e-01 Reference value :  5.97185e-01 Reference value :  6.20399e-01 Reference value :  6.37835e-01 Reference value :  6.60941e-01 Reference value :  6.84083e-01 Reference value :  7.07057e-01 Reference value :  7.30099e-01 Reference value :  7.53101e-01 Reference value :  7.76149e-01 Reference value :  7.99261e-01
+No. of Data Rows : 400021
+vmax                =  2.988313e-01 at=  7.905149e-01
+vmin                =  -2.988313e-01 at=  7.252669e-01
+t1                  =  1.325144e-01
+t2                  =  1.994354e-01
+Note: Simulation executed from .control section 

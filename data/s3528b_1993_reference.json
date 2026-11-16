@@ -1,0 +1,250 @@
+{
+  "source": "AMI S3528B February1993; uploaded63928.pdf; printed49/50 Figures5/9",
+  "source_sha256": "6f6deb600c1547e1b5be41b9a35b81eb68db51ac3c38e694f4653003e7e47c9e",
+  "provenance": "digitized_manufacturer_typical_curves_not_independent_hardware",
+  "reference_cutoff_hz": 3200,
+  "digitization": {
+    "render_scale": 4,
+    "threshold": 110,
+    "delay_crop_pdf_points": [
+      340,
+      195,
+      560,
+      365
+    ],
+    "loss_crop_pdf_points": [
+      30,
+      510,
+      285,
+      740
+    ],
+    "delay_axis_pixels": {
+      "x_0hz": 64,
+      "x_3600hz": 811,
+      "y_0us": 638,
+      "y_2000us": 47
+    },
+    "loss_axis_pixels": {
+      "x_0hz": 134,
+      "x_20000hz": 850,
+      "y_minus5db": 740,
+      "y_75db": 134
+    }
+  },
+  "reading_allowances": {
+    "delay_us": 30,
+    "loss_db": 1.5,
+    "note": "Conservative scan-reading allowances, not manufacturer tolerances"
+  },
+  "notch_frequency_ratios": [
+    1.325,
+    1.62
+  ],
+  "group_delay": [
+    {
+      "frequency_hz": 100,
+      "delay_us": 204.7,
+      "pixel_x": 85,
+      "pixel_y": 577.5,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 300,
+      "delay_us": 201.4,
+      "pixel_x": 126,
+      "pixel_y": 578.5,
+      "split": "holdout"
+    },
+    {
+      "frequency_hz": 600,
+      "delay_us": 201.4,
+      "pixel_x": 188,
+      "pixel_y": 578.5,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 900,
+      "delay_us": 206.4,
+      "pixel_x": 251,
+      "pixel_y": 577.0,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 1200,
+      "delay_us": 218.3,
+      "pixel_x": 313,
+      "pixel_y": 573.5,
+      "split": "holdout"
+    },
+    {
+      "frequency_hz": 1500,
+      "delay_us": 230.1,
+      "pixel_x": 375,
+      "pixel_y": 570.0,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 1800,
+      "delay_us": 255.5,
+      "pixel_x": 438,
+      "pixel_y": 562.5,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 2100,
+      "delay_us": 277.5,
+      "pixel_x": 500,
+      "pixel_y": 556.0,
+      "split": "holdout"
+    },
+    {
+      "frequency_hz": 2400,
+      "delay_us": 319.8,
+      "pixel_x": 562,
+      "pixel_y": 543.5,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 2700,
+      "delay_us": 395.9,
+      "pixel_x": 624,
+      "pixel_y": 521.0,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 2850,
+      "delay_us": 453.5,
+      "pixel_x": 655,
+      "pixel_y": 504.0,
+      "split": "holdout"
+    },
+    {
+      "frequency_hz": 3000,
+      "delay_us": 539.8,
+      "pixel_x": 686,
+      "pixel_y": 478.5,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 3100,
+      "delay_us": 656.5,
+      "pixel_x": 707,
+      "pixel_y": 444.0,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 3200,
+      "delay_us": 881.6,
+      "pixel_x": 728,
+      "pixel_y": 377.5,
+      "split": "holdout"
+    },
+    {
+      "frequency_hz": 3250,
+      "delay_us": 974.6,
+      "pixel_x": 738,
+      "pixel_y": 350.0,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 3300,
+      "delay_us": 1088.0,
+      "pixel_x": 749,
+      "pixel_y": 316.5,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 3350,
+      "delay_us": 1060.9,
+      "pixel_x": 759,
+      "pixel_y": 324.5,
+      "split": "holdout"
+    },
+    {
+      "frequency_hz": 3400,
+      "delay_us": 940.8,
+      "pixel_x": 770,
+      "pixel_y": 360.0,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 3500,
+      "delay_us": 663.3,
+      "pixel_x": 790,
+      "pixel_y": 442.0,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 3550,
+      "delay_us": 546.5,
+      "pixel_x": 801,
+      "pixel_y": 476.5,
+      "split": "holdout"
+    }
+  ],
+  "stopband_loss": [
+    {
+      "frequency_hz": 6000,
+      "loss_db": 54.21,
+      "pixel_x": 349,
+      "pixel_y": 291.5,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 6500,
+      "loss_db": 52.62,
+      "pixel_x": 367,
+      "pixel_y": 303.5,
+      "split": "holdout"
+    },
+    {
+      "frequency_hz": 7000,
+      "loss_db": 52.56,
+      "pixel_x": 385,
+      "pixel_y": 304.0,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 8000,
+      "loss_db": 53.48,
+      "pixel_x": 420,
+      "pixel_y": 297.0,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 10000,
+      "loss_db": 56.98,
+      "pixel_x": 492,
+      "pixel_y": 270.5,
+      "split": "holdout"
+    },
+    {
+      "frequency_hz": 12000,
+      "loss_db": 60.61,
+      "pixel_x": 564,
+      "pixel_y": 243.0,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 15000,
+      "loss_db": 65.17,
+      "pixel_x": 671,
+      "pixel_y": 208.5,
+      "split": "fit"
+    },
+    {
+      "frequency_hz": 18000,
+      "loss_db": 68.86,
+      "pixel_x": 778,
+      "pixel_y": 180.5,
+      "split": "holdout"
+    },
+    {
+      "frequency_hz": 19500,
+      "loss_db": 70.51,
+      "pixel_x": 832,
+      "pixel_y": 168.0,
+      "split": "fit"
+    }
+  ]
+}

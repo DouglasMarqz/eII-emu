@@ -1,0 +1,74 @@
+[
+  {
+    "target": "ic137.bin",
+    "source_name": "EMUII_IC137_82S147N_UCD0-6.bin",
+    "size": 512,
+    "sha256": "874b9ec1214977fb95fa77b337b7cb254d243c9a143547af3b440cd2d9ff9116",
+    "sha1": "0bd6a6acab799231454c001b1d600000f78de345",
+    "set": "EII/EII+",
+    "position": "IC137 PROM UCD0.6 (IP319)"
+  },
+  {
+    "target": "ic135.bin",
+    "source_name": "EMUII_IC135_82S147N_UCD11-1.bin",
+    "size": 512,
+    "sha256": "725cd24f9e98f201efcd7cfac4e07f38713495fa960b3f37664e76bd079927f5",
+    "sha1": "a2adbfb412897307277b331cbda2c250def6d172",
+    "set": "EII/EII+",
+    "position": "IC135 PROM UCD11.1 (IP308)"
+  },
+  {
+    "target": "diag.bin",
+    "source_name": "E2DIAG.BIN",
+    "size": 8192,
+    "sha256": "6632df9a4be2a0cc84a804eede03d3a2c158357dedee67eb3eef6cf2c97f2d1e",
+    "sha1": "d572d88c8788e25154a3bb8fd2ba3ff8a300ae40",
+    "set": "service",
+    "position": "IC42 debug monitor (IP341)"
+  },
+  {
+    "target": "main23.bin",
+    "source_name": "E2newerMain_HDMB2_3_MAIN.bin",
+    "size": 8192,
+    "sha256": "f559c0be681fd50eea21198eca8fc4b436822715a283c3926357d0e893f844e1",
+    "sha1": "4ec4bf6df95638d4503ab8ff7e859c420ec0720e",
+    "set": "EII+ HD",
+    "position": "IC42 HD main boot 2.3"
+  },
+  {
+    "target": "main.bin",
+    "source_name": "E2plus_Mainboot_2_1_DM_2764.bin",
+    "size": 8192,
+    "sha256": "5082f8f815e873803929dc570ab8e4083646c6d79368b17b931a0328f06de226",
+    "sha1": "a2332266d6a12eade584b5da85817f3b3ed9037c",
+    "set": "EII+ floppy (default)",
+    "position": "IC42 main boot 2.1"
+  },
+  {
+    "target": "scanner21.bin",
+    "source_name": "EIIscanV2-1.bin",
+    "size": 8192,
+    "sha256": "250d16517b93cc4294d195e006e8d3c63082e29df70f9698946f98df516e35d3",
+    "sha1": "4485e5423606014be73f121c2ee1f053a6eb148a",
+    "set": "EII+ alternative",
+    "position": "IC28 scanner 2.1"
+  },
+  {
+    "target": "scanner.bin",
+    "source_name": "EIIScanV3-1.bin",
+    "size": 8192,
+    "sha256": "478cf8e0956aadf27c51c58a26f24926d4e6f2658a991877dd3d0f3aa98a6227",
+    "sha1": "e354388cd694a1ce55a5b7d89c546308628090c7",
+    "set": "EII+ (default)",
+    "position": "IC28 scanner 3.1"
+  },
+  {
+    "target": "main21dm.bin",
+    "source_name": "Emulator 2+ Mainboot 2.1 DM IC42 2764.BIN",
+    "size": 8192,
+    "sha256": "ce14aeecee13a026fa83cffe315c270f4f4284b5ad15356a46d071c52ef0530c",
+    "sha1": "f3b92110a87cf1e57f4cc7f6b082c26ce15519c3",
+    "set": "EII+ 1 MB floppy boot (MBMEM PROM)",
+    "position": "IC42 main boot 2.1 DM: bank-swap vector 0FDBh, required for 1 MB (docs/MEMORY_1MB.md)"
+  }
+]

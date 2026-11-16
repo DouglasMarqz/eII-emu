@@ -1,0 +1,4 @@
+XF1 vca1_input_to_out_db=-161.161
+XF2 closed_vca2_out_db=-145.416
+XF2b open_vca2_out_db=-1.00719
+XF3 control_step_feedthrough max=0 min=0

@@ -1,0 +1,208 @@
+PPerror: syntax error in line segment
+   ( -0.09 -0.06 -0.03 0 0.03 0.06 0.09 )
+near
+                         0.03 0.06 0.09 )
+Error: RHS "( -0.09 -0.06 -0.03 0 0.03 0.06 0.09 )" invalid
+Using SPARSE 1.3 as Direct Linear Solver
+
+Note: No compatibility mode selected!
+
+
+Circuit: * fig.2-style ac: three 15k inputs (5k thevenin), v5 swept, 4p output
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.190299e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  2.364248e+04
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.190299e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  7.282324e+03
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.190295e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  2.243476e+03
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.190251e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  6.910136e+02
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.189788e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  2.128966e+02
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.184910e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  6.564259e+01
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.133686e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  2.043305e+01
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.190299e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  1.610650e+04
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.190299e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  5.476135e+03
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.190293e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  1.861971e+03
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.190242e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  6.331358e+02
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.189799e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  2.152742e+02
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.185973e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  7.325110e+01
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.152954e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  2.507664e+01
+Doing analysis at TEMP = 50.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.190299e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  1.156858e+04
+Doing analysis at TEMP = 50.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.190298e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  4.275933e+03
+Doing analysis at TEMP = 50.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.190290e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  1.580436e+03
+Doing analysis at TEMP = 50.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.190231e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  5.840997e+02
+Doing analysis at TEMP = 50.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.189802e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  2.159056e+02
+Doing analysis at TEMP = 50.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.186659e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  7.985681e+01
+Doing analysis at TEMP = 50.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.163692e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  2.965330e+01
+Doing analysis at TEMP = 75.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.190299e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  8.665564e+03
+Doing analysis at TEMP = 75.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.190297e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  3.440103e+03
+Doing analysis at TEMP = 75.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.190287e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  1.365676e+03
+Doing analysis at TEMP = 75.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.190221e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  5.421636e+02
+Doing analysis at TEMP = 75.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.189799e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  2.152515e+02
+Doing analysis at TEMP = 75.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.187125e+00
+Using SPARSE 1.3 as Direct Linear Solver
+f3                  =  8.549968e+01
+Doing analysis at TEMP = 75.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+g0                  =  4.170178e+00
+f3                  =  3.406030e+01
+Note: Simulation executed from .control section 

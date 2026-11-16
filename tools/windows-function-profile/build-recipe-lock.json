@@ -1,0 +1,10 @@
+{
+  "baseline_commit": "f0ac1120f4fa16b04d1d4712d91eddc43e63d568",
+  "dll_sha256": "eed34a02b789bc45a1a8dd9136a034af0e5597693f7f685e4ccceca5695c7cb1",
+  "accepted_build_script_sha256": "52fb14eebad6abca591020614d041900c495ed0aef0a5bd9b9b29ef5b42db3b6",
+  "owner_rule": "Never deviate from accepted plugin build recipe; any discrepancy stops a plugin build. No plugin build occurred in this profiling task.",
+  "original_owner_pgo_sha256": "7a6377adf673fd2c78d1cb1b09155e9fbab44e796589b67ec8c9181dce1cf259",
+  "profiler_is_separate_offline_reader": true,
+  "compiler_sha256": "c9b86311ade81d53235c93fafabdf98328d094de344ea9a9038e0dab6695ee9f",
+  "compiler_backend_sha256": "5996bd5db24162e3767bdf7c75f7dcc0bf2bc3d1957433aecf176e62e153b40a"
+}

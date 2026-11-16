@@ -1,0 +1,28 @@
+* VCA crossfeed / feedthrough (EII wiring): (1) VCA1 input driven, pin16 grounded;
+* (2) VCA2 closed (ACV 0) with 100 mVpp on pin 12; (3) ACV step 0->5 V, zero input.
+.include ssm2045_m2.lib
+.include eii_board.inc
+.control
+alter Vin11 ac=0.05
+alter Vacv dc=5
+ac lin 1 1000 1000
+let xdb=db(mag(v(cout)))
+echo "XF1 vca1_input_to_out_db=$&xdb" >> eii_vcaxf.out
+alter Vin11 ac=0
+alter Vin12 ac=0.05
+alter Vacv dc=0
+ac lin 1 1000 1000
+let xdb=db(mag(v(cout)))
+echo "XF2 closed_vca2_out_db=$&xdb" >> eii_vcaxf.out
+alter Vacv dc=5
+ac lin 1 1000 1000
+let xdb=db(mag(v(cout)))
+echo "XF2b open_vca2_out_db=$&xdb" >> eii_vcaxf.out
+alter Vin12 ac=0
+alter Vacv pwl = [ 0 0 1m 0 1.001m 5 ]
+tran 2u 20m
+meas tran ftmax max v(cout)
+meas tran ftmin min v(cout)
+echo "XF3 control_step_feedthrough max=$&ftmax min=$&ftmin" >> eii_vcaxf.out
+.endc
+.end

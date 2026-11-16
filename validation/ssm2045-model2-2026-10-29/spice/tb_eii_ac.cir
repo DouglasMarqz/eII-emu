@@ -1,0 +1,29 @@
+* EII AC family vs FCV and Q curves vs QCV (pin 8 / Y)
+.include ssm2045_m2.lib
+.include eii_board.inc
+.control
+op
+echo "BIAS v(bias)=$&v(bias) v(5)=$&v(5)"
+foreach f 0 0.5 1 1.5 2 2.5 3 3.5 4 4.5 5
+ alter Vfcv dc=$f
+ op
+ let v5=v(5)
+ ac dec 40 1 100k
+ meas ac g0 find vdb(8) at=1.2
+ let lvl=g0-3.0103
+ meas ac f3 when vdb(8)=lvl fall=1
+ echo "EIIAC fcv=$f v5=$&v5 g0db=$&g0 f3=$&f3" >> eii_ac.out
+end
+alter Vfcv dc=2.5
+foreach q 0 1 1.5 2 2.25 2.5 2.6
+ alter Vqcv dc=$q
+ op
+ let iq=i(Vqcv)
+ ac dec 100 1 100k
+ meas ac g0 find vdb(8) at=1.2
+ meas ac pk max vdb(8)
+ meas ac fpk when vdb(8)=pk
+ echo "EIIQ qcv=$q iq=$&iq g0db=$&g0 peakdb=$&pk" >> eii_ac.out
+end
+.endc
+.end

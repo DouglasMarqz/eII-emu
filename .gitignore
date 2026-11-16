@@ -1,0 +1,8 @@
+build/
+roms/
+*.bin
+*.BIN
+*.zip
+*.E2O
+*.emuiifd
+__pycache__/

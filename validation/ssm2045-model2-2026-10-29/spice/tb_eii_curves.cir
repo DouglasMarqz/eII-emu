@@ -1,0 +1,19 @@
+* EII magnitude families for plots: FCV family (QCV 0) and QCV family (FCV 2.5)
+.include ssm2045_m2.lib
+.include eii_board.inc
+.control
+foreach f 0.5 1 1.5 2 2.5 3 3.5 4 4.5
+ alter Vfcv dc=$f
+ ac dec 50 10 60k
+ set fn="curve_fcv_{$f}.txt"
+ wrdata $fn vdb(8)
+end
+alter Vfcv dc=2.5
+foreach q 0 1 1.5 2 2.25 2.5 2.6
+ alter Vqcv dc=$q
+ ac dec 100 10 60k
+ set fn="curve_qcv_{$q}.txt"
+ wrdata $fn vdb(8)
+end
+.endc
+.end

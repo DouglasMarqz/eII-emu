@@ -1,0 +1,2 @@
+PASS: exact compiler/profile and accepted command flags/input/link order; output path may differ. No build performed.
+PASS: rejectO2,missingLTO,missingPGOmismatcherror,missingstatic.

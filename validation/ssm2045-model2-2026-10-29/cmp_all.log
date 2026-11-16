@@ -1,0 +1,90 @@
+=== cmp_ac ===
+T=   0 v5=-0.09 spice_f3= 23642.50 cpp_gain_at_f3=-3.032 dB (err -0.021 dB)
+T=   0 v5=-0.06 spice_f3=  7282.32 cpp_gain_at_f3=-3.027 dB (err -0.017 dB)
+T=   0 v5=-0.03 spice_f3=  2243.48 cpp_gain_at_f3=-3.020 dB (err -0.010 dB)
+T=   0 v5=+0.00 spice_f3=   691.01 cpp_gain_at_f3=-3.015 dB (err -0.004 dB)
+T=   0 v5=+0.03 spice_f3=   212.90 cpp_gain_at_f3=-3.008 dB (err +0.002 dB)
+T=   0 v5=+0.06 spice_f3=    65.64 cpp_gain_at_f3=-3.001 dB (err +0.010 dB)
+T=   0 v5=+0.09 spice_f3=    20.43 cpp_gain_at_f3=-2.993 dB (err +0.017 dB)
+T=  25 v5=-0.09 spice_f3= 16106.50 cpp_gain_at_f3=-3.053 dB (err -0.042 dB)
+T=  25 v5=-0.06 spice_f3=  5476.14 cpp_gain_at_f3=-3.037 dB (err -0.026 dB)
+T=  25 v5=-0.03 spice_f3=  1861.97 cpp_gain_at_f3=-3.021 dB (err -0.011 dB)
+T=  25 v5=+0.00 spice_f3=   633.14 cpp_gain_at_f3=-3.015 dB (err -0.005 dB)
+T=  25 v5=+0.03 spice_f3=   215.27 cpp_gain_at_f3=-3.009 dB (err +0.002 dB)
+T=  25 v5=+0.06 spice_f3=    73.25 cpp_gain_at_f3=-3.002 dB (err +0.008 dB)
+T=  25 v5=+0.09 spice_f3=    25.08 cpp_gain_at_f3=-2.996 dB (err +0.015 dB)
+T=  50 v5=-0.09 spice_f3= 11568.60 cpp_gain_at_f3=-3.024 dB (err -0.014 dB)
+T=  50 v5=-0.06 spice_f3=  4275.93 cpp_gain_at_f3=-3.030 dB (err -0.020 dB)
+T=  50 v5=-0.03 spice_f3=  1580.44 cpp_gain_at_f3=-3.021 dB (err -0.011 dB)
+T=  50 v5=+0.00 spice_f3=   584.10 cpp_gain_at_f3=-3.014 dB (err -0.004 dB)
+T=  50 v5=+0.03 spice_f3=   215.91 cpp_gain_at_f3=-3.009 dB (err +0.001 dB)
+T=  50 v5=+0.06 spice_f3=    79.86 cpp_gain_at_f3=-3.003 dB (err +0.007 dB)
+T=  50 v5=+0.09 spice_f3=    29.65 cpp_gain_at_f3=-2.997 dB (err +0.013 dB)
+T=  75 v5=-0.09 spice_f3=  8665.56 cpp_gain_at_f3=-3.039 dB (err -0.028 dB)
+T=  75 v5=-0.06 spice_f3=  3440.10 cpp_gain_at_f3=-3.032 dB (err -0.022 dB)
+T=  75 v5=-0.03 spice_f3=  1365.68 cpp_gain_at_f3=-3.019 dB (err -0.009 dB)
+T=  75 v5=+0.00 spice_f3=   542.16 cpp_gain_at_f3=-3.015 dB (err -0.005 dB)
+T=  75 v5=+0.03 spice_f3=   215.25 cpp_gain_at_f3=-3.009 dB (err +0.001 dB)
+T=  75 v5=+0.06 spice_f3=    85.50 cpp_gain_at_f3=-3.004 dB (err +0.006 dB)
+T=  75 v5=+0.09 spice_f3=    34.06 cpp_gain_at_f3=-2.998 dB (err +0.012 dB)
+max |err| dB 0.04228394169702421
+=== cmp_thd ===
+fr      oc(peak)  SPICE_THD%  CPP_THD%   SPICE_h1   CPP_h1
+  158.12  0.020      0.0072     0.0072    0.20688   0.20687
+  158.12  0.050      0.0454     0.0456    0.51702   0.51700
+  158.12  0.075      0.1031     0.1035    0.77513   0.77509
+  158.12  0.150      0.4334     0.4344    1.54533   1.54524
+  158.12  0.300     23.4139    11.7487    2.72611   2.77752
+  158.12  0.600     60.6787    15.5588    2.04966   3.14857
+  632.46  0.020      0.0733     0.0733    0.14965   0.14958
+  632.46  0.050      0.4464     0.4463    0.36603   0.36583
+  632.46  0.075      0.9663     0.9660    0.53161   0.53130
+  632.46  0.150      3.1512     3.1493    0.90476   0.90411
+  632.46  0.300      6.7589     6.7515    1.18350   1.18250
+  632.46  0.600      7.9640     7.9520    1.23544   1.23431
+=== cmp_eii ===
+FCV=0.0 SPICE g0=-18.480dB f3= 44062.80Hz | C++ g0=-18.480dB gain@f3=-3.041dB err=-0.030
+FCV=0.5 SPICE g0=-18.480dB f3= 20685.20Hz | C++ g0=-18.480dB gain@f3=-3.118dB err=-0.107
+FCV=1.0 SPICE g0=-18.480dB f3=  9711.81Hz | C++ g0=-18.480dB gain@f3=-3.071dB err=-0.060
+FCV=1.5 SPICE g0=-18.480dB f3=  4560.28Hz | C++ g0=-18.480dB gain@f3=-3.039dB err=-0.029
+FCV=2.0 SPICE g0=-18.480dB f3=  2141.57Hz | C++ g0=-18.480dB gain@f3=-3.040dB err=-0.030
+FCV=2.5 SPICE g0=-18.480dB f3=  1005.82Hz | C++ g0=-18.479dB gain@f3=-3.029dB err=-0.019
+FCV=3.0 SPICE g0=-18.480dB f3=   472.37Hz | C++ g0=-18.475dB gain@f3=-3.021dB err=-0.011
+FCV=3.5 SPICE g0=-18.480dB f3=   221.71Hz | C++ g0=-18.457dB gain@f3=-3.024dB err=-0.014
+FCV=4.0 SPICE g0=-18.480dB f3=   104.07Hz | C++ g0=-18.382dB gain@f3=-3.083dB err=-0.073
+FCV=4.5 SPICE g0=-18.479dB f3=    48.86Hz | C++ g0=-18.208dB gain@f3=-3.242dB err=-0.232
+FCV=5.0 SPICE g0=-18.472dB f3=    22.93Hz | C++ g0=-20.020dB gain@f3=-1.413dB err=+1.597
+AC worst 1.5972814205235262
+QCV=0.00 iq_model=   0.00uA SPICE g0=-18.480 peak=-18.205 | C++ g0=-18.479
+QCV=1.00 iq_model=  16.28uA SPICE g0=-20.535 peak=-18.014 | C++ g0=-20.532
+QCV=1.50 iq_model=  36.42uA SPICE g0=-22.546 peak=-15.874 | C++ g0=-22.543
+QCV=2.00 iq_model=  56.95uA SPICE g0=-24.207 peak=-11.757 | C++ g0=-24.203
+QCV=2.25 iq_model=  67.27uA SPICE g0=-24.935 peak=-8.144 | C++ g0=-24.932
+QCV=2.50 iq_model=  77.62uA SPICE g0=-25.609 peak=-1.564 | C++ g0=-25.606
+QCV=2.60 iq_model=  81.77uA SPICE g0=-25.865 peak=2.923 | C++ g0=-25.862
+=== cmp_osc ===
+FCV=0.0 SPICE g0=-18.480dB f3= 44062.80Hz | C++ g0=-18.480dB gain@f3=-3.041dB err=-0.030
+FCV=0.5 SPICE g0=-18.480dB f3= 20685.20Hz | C++ g0=-18.480dB gain@f3=-3.118dB err=-0.107
+FCV=1.0 SPICE g0=-18.480dB f3=  9711.81Hz | C++ g0=-18.480dB gain@f3=-3.071dB err=-0.060
+FCV=1.5 SPICE g0=-18.480dB f3=  4560.28Hz | C++ g0=-18.480dB gain@f3=-3.039dB err=-0.029
+FCV=2.0 SPICE g0=-18.480dB f3=  2141.57Hz | C++ g0=-18.480dB gain@f3=-3.040dB err=-0.030
+FCV=2.5 SPICE g0=-18.480dB f3=  1005.82Hz | C++ g0=-18.479dB gain@f3=-3.029dB err=-0.019
+FCV=3.0 SPICE g0=-18.480dB f3=   472.37Hz | C++ g0=-18.475dB gain@f3=-3.021dB err=-0.011
+FCV=3.5 SPICE g0=-18.480dB f3=   221.71Hz | C++ g0=-18.457dB gain@f3=-3.024dB err=-0.014
+FCV=4.0 SPICE g0=-18.480dB f3=   104.07Hz | C++ g0=-18.382dB gain@f3=-3.083dB err=-0.073
+FCV=4.5 SPICE g0=-18.479dB f3=    48.86Hz | C++ g0=-18.208dB gain@f3=-3.242dB err=-0.232
+FCV=5.0 SPICE g0=-18.472dB f3=    22.93Hz | C++ g0=-20.020dB gain@f3=-1.413dB err=+1.597
+AC worst 1.5972814205235262
+QCV=0.00 iq_model=   0.00uA SPICE g0=-18.480 peak=-18.205 | C++ g0=-18.479
+QCV=1.00 iq_model=  16.28uA SPICE g0=-20.535 peak=-18.014 | C++ g0=-20.532
+QCV=1.50 iq_model=  36.42uA SPICE g0=-22.546 peak=-15.874 | C++ g0=-22.543
+QCV=2.00 iq_model=  56.95uA SPICE g0=-24.207 peak=-11.757 | C++ g0=-24.203
+QCV=2.25 iq_model=  67.27uA SPICE g0=-24.935 peak=-8.144 | C++ g0=-24.932
+QCV=2.50 iq_model=  77.62uA SPICE g0=-25.609 peak=-1.564 | C++ g0=-25.606
+QCV=2.60 iq_model=  81.77uA SPICE g0=-25.865 peak=2.923 | C++ g0=-25.862
+QCV=2.70 iq= 85.91uA SPICE ppk=2.6431e-09 f=0.0 | C++ osc iq=8.59135e-05 v5=-0.00983384 ppk=3.62416e-08 max=1.80795e-08 min=-1.81621e-08 freq=1112.91 fallbacks=0
+QCV=2.72 iq= 86.74uA SPICE ppk=0.07368 f=1115.6 | C++ osc iq=8.67435e-05 v5=-0.00983384 ppk=0.0798484 max=0.0399241 min=-0.0399243 freq=1112.98 fallbacks=0
+QCV=2.75 iq= 87.99uA SPICE ppk=0.20425 f=1118.0 | C++ osc iq=8.79886e-05 v5=-0.00983384 ppk=0.204241 max=0.102121 min=-0.102121 freq=1110.68 fallbacks=0
+QCV=2.90 iq= 94.22uA SPICE ppk=0.46947 f=1101.2 | C++ osc iq=9.42173e-05 v5=-0.00983384 ppk=0.469495 max=0.234748 min=-0.234748 freq=1099.42 fallbacks=0
+QCV=3.50 iq=119.17uA SPICE ppk=0.98512 f=1053.4 | C++ osc iq=0.000119174 v5=-0.00983384 ppk=0.985183 max=0.492592 min=-0.492592 freq=1051.62 fallbacks=0
+QCV=5.00 iq=181.74uA SPICE ppk=1.7285 f=927.3 | C++ osc iq=0.000181743 v5=-0.00983384 ppk=1.72867 max=0.864333 min=-0.864333 freq=925.809 fallbacks=0

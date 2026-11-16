@@ -1,0 +1,40 @@
+BOOT_OK tick=182000000 LCD=[P01 Big Brass   ][                ]
+CAPTURE frames=360000 native=360000 overflow=0 order=0 invalid=0 midi=42/0
+ROUTE legacy48 frames=360000 rmsOff=0.235423 rmsOn=0.231165 peakOff=1 peakOn=1 clipOn=2525 diffRel_dB=4.87129 invertedDiffRel_dB=-0.663262 changed=359089 fnvOff=2a6e3e04981195e0 fnvOn=77fde578827d4aac
+DEGLITCH_Y reference-route max |Y|=227.476 V, samples beyond the 13.5 V TL084 swing=118146/2880000
+  ssm96 pass=0 solverFallbacks=0 held=0
+  ssm96 pass=1 solverFallbacks=0 held=0
+ROUTE ssm96 frames=360000 rmsOff=0.157245 rmsOn=0.156001 peakOff=0.638914 peakOn=0.625786 clipOn=0 diffRel_dB=5.16734 invertedDiffRel_dB=-1.66224 changed=359162 fnvOff=359f50303e5e4f6f fnvOn=3921295a6be9c59e
+  ssm192 pass=0 solverFallbacks=0 held=0
+  ssm192 pass=1 solverFallbacks=0 held=0
+ROUTE ssm192 frames=360000 rmsOff=0.156843 rmsOn=0.155745 peakOff=0.635196 peakOn=0.610236 clipOn=0 diffRel_dB=5.03115 invertedDiffRel_dB=-1.04006 changed=359162 fnvOff=325ba13c942108a5 fnvOn=356de485c013d7f2
+  legacyq96 pass=0 solverFallbacks=0 held=0
+  legacyq96 pass=1 solverFallbacks=0 held=0
+ROUTE legacyq96 frames=360000 rmsOff=0.186634 rmsOn=0.18746 peakOff=1 peakOn=1 clipOn=1468 diffRel_dB=4.73536 invertedDiffRel_dB=0.180433 changed=359104 fnvOff=e2df075d7fef46d6 fnvOn=947618006e86dd4a
+  eiii96 pass=0 solverFallbacks=0 held=0
+  eiii96 pass=1 solverFallbacks=0 held=0
+ROUTE eiii96 frames=360000 rmsOff=0.170811 rmsOn=0.167269 peakOff=1 peakOn=1 clipOn=308 diffRel_dB=4.89246 invertedDiffRel_dB=-0.793577 changed=359160 fnvOff=c35a3ba62e3d57dc fnvOn=214dd763b12d24ef
+  ssm96native pass=0 solverFallbacks=0 held=0
+  ssm96native pass=1 solverFallbacks=0 held=0
+ROUTE ssm96native frames=360000 rmsOff=0.00992685 rmsOn=0.00995198 peakOff=0.0519387 peakOn=0.0530718 clipOn=0 diffRel_dB=5.80758 invertedDiffRel_dB=-6.95495 changed=359159 fnvOff=e5e9c75f129c6b54 fnvOn=16ec8ab4e237703b
+  ssm192native pass=0 solverFallbacks=0 held=0
+  ssm192native pass=1 solverFallbacks=0 held=0
+ROUTE ssm192native frames=360000 rmsOff=0.00993487 rmsOn=0.00996375 peakOff=0.0520185 peakOn=0.052924 clipOn=0 diffRel_dB=5.76814 invertedDiffRel_dB=-6.24262 changed=359159 fnvOff=873450f06f6a8852 fnvOn=673bd2771a29c4c1
+  legacyq96native pass=0 solverFallbacks=0 held=0
+  legacyq96native pass=1 solverFallbacks=0 held=0
+ROUTE legacyq96native frames=360000 rmsOff=0.00992717 rmsOn=0.00995313 peakOff=0.0519389 peakOn=0.053143 clipOn=0 diffRel_dB=5.80793 invertedDiffRel_dB=-6.95433 changed=359159 fnvOff=6654fbf52a214487 fnvOn=c1f86862793f250d
+  eiii96native pass=0 solverFallbacks=0 held=0
+  eiii96native pass=1 solverFallbacks=0 held=0
+ROUTE eiii96native frames=360000 rmsOff=0.00977742 rmsOn=0.0098006 peakOff=0.0511691 peakOn=0.0520798 clipOn=0 diffRel_dB=5.83422 invertedDiffRel_dB=-7.50745 changed=359159 fnvOff=343ee7c5337953b5 fnvOn=4d16a4a34a9567d4
+  ssm2m96 pass=0 solverFallbacks=0 held=0
+  ssm2m96 pass=1 solverFallbacks=0 held=0
+ROUTE ssm2m96 frames=360000 rmsOff=0.0580894 rmsOn=0.0454954 peakOff=0.148078 peakOn=0.111732 clipOn=0 diffRel_dB=4.04112 invertedDiffRel_dB=-1.60518 changed=359999 fnvOff=50a56a499381a765 fnvOn=1a9b11164e8cd1cc
+  ssm2m192 pass=0 solverFallbacks=0 held=0
+  ssm2m192 pass=1 solverFallbacks=0 held=0
+ROUTE ssm2m192 frames=360000 rmsOff=0.0592516 rmsOn=0.0459352 peakOff=0.160636 peakOn=0.116282 clipOn=0 diffRel_dB=3.76173 invertedDiffRel_dB=-0.83936 changed=359999 fnvOff=72caaad441acdd7f fnvOn=8df72f751082c4b8
+  ssm2m96native pass=0 solverFallbacks=0 held=0
+  ssm2m96native pass=1 solverFallbacks=0 held=0
+ROUTE ssm2m96native frames=360000 rmsOff=0.0093547 rmsOn=0.0091969 peakOff=0.048915 peakOn=0.0462867 clipOn=0 diffRel_dB=5.72039 invertedDiffRel_dB=-6.98407 changed=359999 fnvOff=ac8bc62abebc3bb2 fnvOn=d7332f8d8f83d25e
+  ssm2m192native pass=0 solverFallbacks=0 held=0
+  ssm2m192native pass=1 solverFallbacks=0 held=0
+ROUTE ssm2m192native frames=360000 rmsOff=0.00934411 rmsOn=0.00919018 peakOff=0.0483401 peakOn=0.0457335 clipOn=0 diffRel_dB=5.68208 invertedDiffRel_dB=-6.29683 changed=359999 fnvOff=1017170d6dc42563 fnvOn=458c5cf8eada1127

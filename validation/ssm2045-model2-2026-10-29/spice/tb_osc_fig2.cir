@@ -1,0 +1,35 @@
+* Fig.2 oscillation: I_Q fixed (current into pin 17), initial kick, 4P output
+.include ssm2045_m2.lib
+Vcc 18 0 15
+Vee 10 0 -6.8
+Vin in 0 dc 0 pwl(0 0 10u 0.01 20u 0)
+Rs  in 2 5k
+V5  5 0 0
+C1 3 0 10n
+C2 4 0 3.3n
+C3 6 0 10n
+C4 7 0 680p
+RL1 1 0 10.91k
+RL8 8 0 10.91k
+Iq 0 17 dc 150u
+R11 11 0 910
+R12 12 0 910
+R13 13 0 200
+R14 14 0 1
+R15 15 0 1e9
+R16 16 0 1e9
+X 1 2 3 4 5 6 7 8 0 10 11 12 13 14 15 16 17 18 SSM2045M2
+.options reltol=1e-5 abstol=1e-13 vntol=1e-8
+.options temp=25 tnom=25
+.control
+foreach iq 140u 148u 150u 152u 160u 185u
+ alter Iq dc=$iq
+ tran 2u 0.8 0 2u
+ meas tran vmax max v(8) from=0.6 to=0.8
+ meas tran vmin min v(8) from=0.6 to=0.8
+ meas tran t1 when v(8)=0 rise=200
+ meas tran t2 when v(8)=0 rise=300
+ echo "OSC iq=$iq max=$&vmax min=$&vmin t1=$&t1 t2=$&t2" >> osc_fig2.out
+end
+.endc
+.end

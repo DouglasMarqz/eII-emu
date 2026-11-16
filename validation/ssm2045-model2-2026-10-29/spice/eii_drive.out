@@ -1,0 +1,4 @@
+DRIVE fcv=0 qcv=0 max=1.60813 min=-1.60813 rms=1.13715 c4max=1.60836 c4min=-1.60823
+DRIVE fcv=0 qcv=5 max=1.17544 min=-1.17528 rms=0.577297 c4max=1.17562 c4min=-1.17534
+DRIVE fcv=2.5 qcv=0 max=1.61556 min=-1.61556 rms=1.11278 c4max=1.61578 c4min=-1.61566
+DRIVE fcv=2.5 qcv=5 max=1.05967 min=-1.0587 rms=0.527365 c4max=1.05985 c4min=-1.05874

@@ -1,0 +1,17 @@
+* EII self-oscillation onset vs QCV (FCV 2.5 V), kick on Y
+.include ssm2045_m2.lib
+.include eii_board.inc
+.options reltol=1e-5 abstol=1e-13 vntol=1e-8
+.control
+alter Vy pwl = [ 0 0 10u 0.1 20u 0 ]
+foreach q 2.70 2.72 2.75 2.9 3.5 5
+ alter Vqcv dc=$q
+ tran 2u 1.2 0 2u
+ meas tran vmax max v(8) from=1.0 to=1.2
+ meas tran vmin min v(8) from=1.0 to=1.2
+ meas tran t1 when v(8)=0 rise=100
+ meas tran t2 when v(8)=0 rise=200
+ echo "EIIOSC qcv=$q max=$&vmax min=$&vmin t1=$&t1 t2=$&t2" >> eii_osc.out
+end
+.endc
+.end
