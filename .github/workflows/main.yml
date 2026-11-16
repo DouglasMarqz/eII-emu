@@ -7,3 +7,6 @@
     issue-message: # optional
     # Comment to post on an individual's first pull request
     pr-message: # optional
+$env:LLVM_MINGW_ROOT='C:/tools/llvm-mingw'
+powershell -ExecutionPolicy Bypass -File tools/build-win64.ps1
+powershell -ExecutionPolicy Bypass -File tools/build-win64-vst3.ps1
